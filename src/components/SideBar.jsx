@@ -144,7 +144,7 @@ export default function SideBar({ handleDrawerClose, open }) {
             transition: ".25s",
           }}
           alt="Remy Sharp"
-          src="../../public/avatar-1.jfif"
+          src="https://www.creativefabrica.com/wp-content/uploads/2023/01/30/Bearded-Man-Avatar-Icon-Graphics-59392089-1-1-580x387.jpg"
         />
         <Typography
           align="center"
