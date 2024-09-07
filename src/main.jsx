@@ -36,7 +36,6 @@ const router = createBrowserRouter(
       <Route path="pie" element={<PieChart />} />
       <Route path="geography" element={<GeographyChart />} />
 
-      {/* Not Found page */}
       <Route path="*" element={<NotFound />} />
     </Route>
   )

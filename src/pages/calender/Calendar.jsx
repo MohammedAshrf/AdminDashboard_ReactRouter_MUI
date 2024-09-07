@@ -91,7 +91,15 @@ export default function Calendar() {
   return (
     <div>
       <Header title={"Calendar"} desc={"Manage your events"} />
-      <Stack direction={"row"} sx={{ gap: "10px" }}>
+      <Stack
+        direction={"row"}
+        sx={{
+          gap: "10px",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Sidebar
           weekendsVisible={weekendsVisible}
           handleWeekendsToggle={handleWeekendsToggle}

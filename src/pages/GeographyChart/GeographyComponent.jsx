@@ -11,11 +11,12 @@ export default function GeographyComponent({ isDashboard = false }) {
     <ResponsiveChoropleth
       data={Data}
       features={WorldCountries.features}
-      margin={{ top: isDashboard ? "0" : "-80", right: 0, bottom: 0, left: 0 }}
+      margin={{ top: isDashboard ? 0 : -80, right: 0, bottom: 0, left: 0 }}
       colors="nivo"
       domain={[0, 1000000]}
       unknownColor="#666666"
       label="properties.name"
+      value="value"
       valueFormat=".2s"
       projectionScale={120}
       projectionTranslation={[0.5, 0.7]}
@@ -67,13 +68,49 @@ export default function GeographyComponent({ isDashboard = false }) {
         },
         {
           match: {
+            id: "AFG",
+          },
+          id: "dots",
+        },
+        {
+          match: {
+            id: "ARE",
+          },
+          id: "dots",
+        },
+        {
+          match: {
             id: "CHN",
           },
           id: "lines",
         },
         {
           match: {
+            id: "AGO",
+          },
+          id: "lines",
+        },
+        {
+          match: {
+            id: "ARG",
+          },
+          id: "lines",
+        },
+        {
+          match: {
             id: "ATA",
+          },
+          id: "gradient",
+        },
+        {
+          match: {
+            id: "ALB",
+          },
+          id: "gradient",
+        },
+        {
+          match: {
+            id: "RUS",
           },
           id: "gradient",
         },
